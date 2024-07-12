@@ -1,0 +1,47 @@
+section{
+    
+    .benefits-cards{
+        @include flex(center,center,20px,row);
+        padding-top: 60px;
+
+        .card{
+            flex: 1 0 30%;
+           min-width: 300px;
+                @include flex(auto,auto,50px ,column);
+            background-color: white;
+            padding: 50px;
+
+            @include responsive(tablet){
+             flex: 1 0 40%;   
+             min-width: 100px;
+             @include flex(auto,auto,40px ,column);
+                padding: 40px;
+               
+                
+            }
+
+            @include responsive(mobile){
+                flex: 1 0 100%;
+                min-width: 100px;
+                @include flex(auto,auto,30px ,column);
+                padding: 30px;
+            }
+            .card-head{
+
+                h2{
+                    text-align: right;
+                }
+            }
+            .icon{
+                @include flex(flex-end,center,0,row);
+
+                i{
+                    cursor: pointer;
+                    color: $primary-color;
+                    font-size: 17px;
+                }
+            }
+        }
+
+    }
+} 

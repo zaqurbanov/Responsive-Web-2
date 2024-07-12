@@ -1,0 +1,37 @@
+nav{
+    @include flex(space-between,center,0,row);
+    padding: 0;
+    
+    .list-wrap{
+        @include flex(auto,center,50px,row);
+
+        .logo{
+            display: flex;
+            
+            a{
+                
+            }
+        }
+    
+        .nav-list{
+            
+            @include flex(center,center,50px,row);
+
+            @include responsive(tablet){
+    
+                display: none;
+            
+        }
+            li{ 
+
+                a{
+                    color: $grey-15;
+                    font-size: 18px;
+                }
+            }
+    
+        }
+    }
+
+}
+

@@ -1,0 +1,21 @@
+section{
+
+    .section-header{
+     
+
+        .section-content{
+
+            @include flex(space-between,center,30px,row);
+
+            p{
+               
+                max-width: 60%;
+                @include responsive(mobile){
+                    max-width: 100%;
+                }
+            }
+        }
+
+    }
+
+}

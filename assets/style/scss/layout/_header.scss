@@ -1,0 +1,26 @@
+header{
+  
+    .container-sm{
+        @include flex(center,center,20px,column);
+        .header{
+
+          
+            @include flex(center,center,10px,row);
+            
+            h1{
+                span{
+                    color: $primary-color;
+                }
+            }
+
+            i{
+                color: $primary-color;
+                font-size: 30px;
+            }
+        }
+        .btn-grp{
+            margin-top: 30px;
+            @include flex(center,center,10px,row);
+        }
+    }
+}

@@ -1,0 +1,228 @@
+$primary-color:#FF9500;
+$black:#1A1A1A;
+
+$white:#fff;
+$grey-15:#262626;
+$grey-10:#1A1A1A;
+$grey-30:#4C4C4D;
+$grey-35:#59595A;
+$grey-20:#333333;
+$grey-40:#656567;
+$text-18:18px;
+$h1:48px;
+$h3:38px;
+$h2:80px;
+$card-header-text:24px;
+$section-tag:48px;
+$card-author-text:20px;
+.container{
+    width: 85%;
+    padding: 50px 0;
+    margin: auto;
+    
+    
+
+    @include responsive(tablet){
+        width: 90%;  
+        padding: 40px 0; 
+    }
+
+    @include responsive(mobile){
+        width: 96%;
+        padding: 25px 0;
+    }
+
+
+}
+.nav-container{
+    width: 85%;
+    padding: 20px 0;
+    margin: auto;
+    
+    
+
+    @include responsive(tablet){
+        width: 90%;  
+    }
+
+    @include responsive(mobile){
+        width: 96%;
+    }
+
+}
+.container-sm{
+    width: 60%;
+    margin: auto;
+    padding: 50px 0;
+    @include responsive(tablet){
+        width: 80%;
+        padding: 40px 0;   
+    }
+
+    @include responsive(mobile){
+        width: 90%;
+        padding: 25px 0;
+    }
+}
+.tag{
+    font-size: 18px;
+    padding: 10px 16px;
+    background-color: white;
+    color: $grey-30;
+    font-weight: 400;
+    border: 1px solid #F1F1F3;
+    border-radius: 8px;
+    @include responsive(tablet){
+       font-size: 14px;
+       padding: 8px 14px;  
+    }
+
+  
+}
+
+
+.text-18{
+    font-size:$text-18;
+    font-weight: 400;
+    line-height: 150%;
+    @include responsive(tablet){
+        font-size: 16px;
+    }
+
+    @include responsive(mobile){
+        font-size: 14px;
+    }
+}
+
+.f-text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+
+
+    @include responsive(tablet){
+        font-size: 16px;
+    };
+    @include responsive(mobile){
+        font-size: 14px;
+}
+}
+.f-header{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    color: $grey-15;
+
+    @include responsive(tablet){
+        font-size: 18px;
+
+    }
+}
+.card-header-text{
+
+    font-size: $card-header-text;
+    font-weight: 600;
+    line-height: 150%;
+    color: $grey-20;
+    @include responsive(tablet){
+        font-size: 20px;
+    }
+}
+.card-author-text{
+    font-size: $card-author-text;
+    font-weight: 500;
+    color: $grey-15;
+    @include responsive(tablet){
+
+        font-size: 16px;
+    }
+}
+.card-text{
+    font-size: $text-18;
+    color: $grey-20;
+    font-weight: 400;
+    line-height: 150%;
+}
+h1{
+    font-size: $h1;
+    color: $grey-10;
+    font-weight: 600;
+    line-height: 150%;
+    @include responsive(tablet){
+        font-size: 28px;
+    }
+
+    @include responsive(mobile){
+        font-size: 24px;
+    }
+
+}
+
+h3{
+    font-size: $h3;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include responsive(tablet){
+        font-size: 36px;
+    }
+
+    @include responsive(mobile){
+        font-size: 16px;
+    }
+}
+h2{
+    font-size: $h2;
+    font-weight: 700;
+    color: $grey-15;
+
+    
+@include responsive(tablet){
+    font-size: 60px;
+}
+
+@include responsive(mobile){
+    font-size: clamp(20px,2vw,50px);
+}
+}
+.section-tag{
+
+    font-size: $section-tag;
+    font-style: normal;
+font-weight: 600;
+line-height: 150%; 
+color: $grey-15;
+
+@include responsive(tablet){
+    font-size: 38px;
+}
+
+@include responsive(mobile){
+    font-size: 28px;
+}
+
+}
+.align-center{
+    text-align: center;
+}
+
+
+.grey-10{
+    color: $grey-10;
+}
+.grey-15{
+    color: $grey-15;
+}
+.grey-20{
+    color: $grey-20;
+}
+.grey-30{
+    color: $grey-30;
+}
+.grey-35{
+    color: $grey-35;
+}
+.grey-40{
+    color: $grey-40;
+}
+

@@ -1,0 +1,54 @@
+footer{
+
+    background-color: white;
+
+    .container{
+
+
+        .row{
+@include flex(space-between,center,24px,row);    
+
+            .footer-main-card{
+
+                @include flex(flex-start,auto,40px,column);
+
+                @include responsive(tablet){
+                    gap: 30px;
+                }
+
+                .card-list{
+                    li{
+                        a{
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+
+            .footer-cards{
+                @include flex(space-between,flex-start,30px,row);
+
+                .card,.social-card{
+                    @include flex(flex-start,flex-start,14px,column);
+                    flex: 1 0 auto;
+                    min-width: 200px;
+
+                }
+
+                .social-card{
+                    .social-list{
+                        @include flex(auto,auto,14px,row);
+                        i{
+                            padding: 10px;
+                            background-color: #F7F7F8;
+                            border: 1px solid #F1F1F3;
+                            border-radius: 6px;
+                        }
+                    }
+                }
+
+            }
+        
+        }
+    }
+}

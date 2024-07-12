@@ -1,0 +1,80 @@
+#courses {
+
+    .container {
+
+        .courses-cards {
+            @include flex(center, center, 30px, row);
+
+            padding-top: 80px;
+
+            @include responsive(tablet) {
+                @include flex(center, center, 20px, row);
+                padding-top: 60px;
+            }
+            @include responsive(mobile){
+                padding-top: 40px;
+            }
+
+            .course-card {
+                flex: 1 0 40%;
+                min-width: 450px;
+                background-color: white;
+                padding: 50px;
+
+                border-radius: 12px;
+                @include flex(auto, auto, 30px, column);
+
+                @include responsive(tablet) {
+                    @include flex(auto, auto, 24px, column);
+                    padding: 40px;
+                    flex: 1 0 45%;
+                    min-width: 450px;
+
+                }
+
+                @include responsive(mobile) {
+                    flex: 1 0 100%;
+                    min-width: 100%;
+                }
+
+                .card-header {
+
+
+
+                    .card-img {
+
+                        height: 380px;
+                        width: 100%;
+                        border-radius: 8px;
+
+                        @include responsive(tablet) {
+                            height: 266px;
+                        }
+                        @include responsive(mobile) {
+                            height: 174px;
+                        }
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 8px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+
+
+                }
+
+                .course-info {
+                    @include flex(space-between, center, 0, row);
+
+                    .tags {
+                        @include flex(auto, center, 10px, row)
+                    }
+                }
+            }
+        }
+    }
+
+}

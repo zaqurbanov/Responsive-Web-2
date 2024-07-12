@@ -1,0 +1,73 @@
+.btn-orange{
+    font-size: 18px;
+    color:white;
+    background-color: $primary-color;
+    padding: 14px 34px;
+    font-weight: 400;
+    border: none;
+    @include responsive(tablet){
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+}
+
+.btn-white{
+    font-size: 18px;
+    color:$grey-15;
+    background-color: white;
+    padding: 14px 34px;
+    font-weight: 400;
+    border: none;
+    @include responsive(mobile){
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+.card-btn-white{
+    background-color: #F7F7F8;
+    border: 1px solid #F1F1F3;
+    border-radius: 8px;
+    padding: 18px 0;
+    width: 100%;
+    font-size: $text-18;
+    outline: none;
+    
+    @include responsive(tablet){
+        padding: 14px 0;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+}
+.btn-white-2{
+    background-color: #F7F7F8;
+    border: 1px solid #F1F1F3;
+    border-radius: 8px;
+    padding: 18px 24px;
+    
+    font-size: $text-18;
+    outline: none;
+    
+    @include responsive(tablet){
+        padding: 14px 20px;
+        
+        border-radius: 6px;
+        font-size: 14px;
+    }
+}
+ .pricing-btn{
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
+    background-color: #FF9500;
+    color: white;
+    padding: 20px;
+    font-size: $text-18;
+    border: none;
+    @include responsive(tablet){
+        padding: 18px;
+    }
+  
+
+
+ }

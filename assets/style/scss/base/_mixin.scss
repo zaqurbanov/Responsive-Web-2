@@ -1,0 +1,29 @@
+@mixin responsive($breakpoint){
+    @if $breakpoint ==desk{
+        @media(max-width: #{$breakpoint-desktop}){
+            @content
+        }
+    } @else if $breakpoint==tablet{
+        @media(max-width: #{$breakpoint-tablet}){
+            @content
+        }
+    }  @else if $breakpoint == mobile {
+        @media(max-width: #{$breakpoint-mobile}){
+            @content
+        }
+    } 
+
+}
+
+@mixin flex($j-content,$align-content,$gap,$direction){
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+    flex-wrap: wrap;
+    justify-content: $j-content;
+    align-items: $align-content;
+
+
+}
+
+
